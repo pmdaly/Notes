@@ -1,58 +1,62 @@
-\contentsline {section}{\numberline {1}Computer Science}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}Algorithms}{5}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Data Sctructures}{5}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Linux}{5}{subsection.1.3}
-\contentsline {section}{\numberline {2}Machine Learning}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Supervised}{5}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Ordinary Least Squares (OLS)}{5}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Generalized Linear Model(GLM)}{5}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Logistic Regression}{5}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Linear Discriminant Analysis}{5}{subsubsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.5}Support Vector Machines}{5}{subsubsection.2.1.5}
-\contentsline {subsubsection}{\numberline {2.1.6}K-Nearest Neighbors}{5}{subsubsection.2.1.6}
-\contentsline {subsubsection}{\numberline {2.1.7}Gaussian Process}{5}{subsubsection.2.1.7}
-\contentsline {subsubsection}{\numberline {2.1.8}K-Nearest Neighbors}{5}{subsubsection.2.1.8}
-\contentsline {subsubsection}{\numberline {2.1.9}Decision Trees}{5}{subsubsection.2.1.9}
-\contentsline {subsubsection}{\numberline {2.1.10}Random Forest}{5}{subsubsection.2.1.10}
-\contentsline {subsubsection}{\numberline {2.1.11}Gaussian Process}{5}{subsubsection.2.1.11}
-\contentsline {subsubsection}{\numberline {2.1.12}Naive Bayes}{5}{subsubsection.2.1.12}
-\contentsline {subsection}{\numberline {2.2}Unsupervised}{5}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Gaussan Mixture Models}{5}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}K-Means}{5}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Density-Based Spatial Clustering of Applications with Noise (DBSCAN)}{5}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Spectral Clustering}{5}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}Hierarchical Clustering}{5}{subsubsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.6}Factor Analysis}{5}{subsubsection.2.2.6}
-\contentsline {subsubsection}{\numberline {2.2.7}Independent Component Analysis}{5}{subsubsection.2.2.7}
-\contentsline {subsubsection}{\numberline {2.2.8}Principal Component Analysis}{5}{subsubsection.2.2.8}
-\contentsline {subsubsection}{\numberline {2.2.9}Non-Negative Matrix Factorization (NMF)}{5}{subsubsection.2.2.9}
-\contentsline {subsubsection}{\numberline {2.2.10}Latent Dirichlet Allocation (LDA)}{5}{subsubsection.2.2.10}
-\contentsline {subsubsection}{\numberline {2.2.11}Outliear Detection?}{5}{subsubsection.2.2.11}
-\contentsline {section}{\numberline {3}Deep Learning}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Convolutional Networks}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Recurrent Networks}{5}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Long Short-Term Memory (LSTM)}{5}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Autoencoders}{5}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Reinforcement Learning}{5}{subsection.3.5}
-\contentsline {section}{\numberline {4}Linear Algebra}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}Norms}{5}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Euclidean / Frobenius}{5}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Manhatten}{5}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Infinity}{5}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}Nuclear}{5}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}Spectral}{5}{subsubsection.4.1.5}
-\contentsline {subsubsection}{\numberline {4.1.6}Symmetric}{5}{subsubsection.4.1.6}
-\contentsline {subsubsection}{\numberline {4.1.7}Positive Definite}{5}{subsubsection.4.1.7}
-\contentsline {subsubsection}{\numberline {4.1.8}Positive Semi-Definite}{5}{subsubsection.4.1.8}
-\contentsline {subsubsection}{\numberline {4.1.9}Negative Definite}{5}{subsubsection.4.1.9}
-\contentsline {subsubsection}{\numberline {4.1.10}Negative Semi-Definite}{5}{subsubsection.4.1.10}
-\contentsline {subsection}{\numberline {4.2}Eigendecomposition}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Singular Value Decomposition (SVD)}{5}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Principal Component Analysis (PCA)}{5}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Independent Component Analysis (ICA)}{5}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Canonical Component Analysis (CCA)}{5}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Factor Analysis}{5}{subsection.4.7}
-\contentsline {section}{\numberline {5}Statistics}{5}{section.5}
-\contentsline {subsection}{\numberline {5.1}Probability Theory}{5}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Distributions}{5}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Combinatorics}{5}{subsection.5.3}
+\contentsline {section}{\numberline {1}Computer Science}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Algorithms}{4}{subsection.1.1}
+\contentsline {paragraph}{DFS}{4}{section*.2}
+\contentsline {paragraph}{BFS}{4}{section*.3}
+\contentsline {paragraph}{Mergesort}{5}{section*.4}
+\contentsline {subsection}{\numberline {1.2}Data Sctructures}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Linux}{7}{subsection.1.3}
+\contentsline {section}{\numberline {2}Machine Learning}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Supervised}{7}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Ordinary Least Squares (OLS)}{7}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Generalized Linear Model(GLM)}{7}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Logistic Regression}{7}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Linear Discriminant Analysis}{7}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Support Vector Machines}{7}{subsubsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.6}K-Nearest Neighbors}{7}{subsubsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.1.7}Gaussian Process}{7}{subsubsection.2.1.7}
+\contentsline {subsubsection}{\numberline {2.1.8}K-Nearest Neighbors}{7}{subsubsection.2.1.8}
+\contentsline {subsubsection}{\numberline {2.1.9}Decision Trees}{7}{subsubsection.2.1.9}
+\contentsline {subsubsection}{\numberline {2.1.10}Random Forest}{7}{subsubsection.2.1.10}
+\contentsline {subsubsection}{\numberline {2.1.11}Gaussian Process}{7}{subsubsection.2.1.11}
+\contentsline {subsubsection}{\numberline {2.1.12}Naive Bayes}{7}{subsubsection.2.1.12}
+\contentsline {subsubsection}{\numberline {2.1.13}Kalman Filter? dunno where this should go yet... maybe estimation section?}{7}{subsubsection.2.1.13}
+\contentsline {subsection}{\numberline {2.2}Unsupervised}{7}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Gaussan Mixture Models}{7}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}K-Means}{7}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Density-Based Spatial Clustering of Applications with Noise (DBSCAN)}{7}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Spectral Clustering}{7}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Hierarchical Clustering}{7}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}Factor Analysis}{7}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}Independent Component Analysis}{7}{subsubsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.8}Principal Component Analysis}{7}{subsubsection.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.9}Non-Negative Matrix Factorization (NMF)}{7}{subsubsection.2.2.9}
+\contentsline {subsubsection}{\numberline {2.2.10}Latent Dirichlet Allocation (LDA)}{7}{subsubsection.2.2.10}
+\contentsline {subsubsection}{\numberline {2.2.11}Outliear Detection?}{7}{subsubsection.2.2.11}
+\contentsline {section}{\numberline {3}Deep Learning}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Convolutional Networks}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Recurrent Networks}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Long Short-Term Memory (LSTM)}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Autoencoders}{7}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Reinforcement Learning}{7}{subsection.3.5}
+\contentsline {section}{\numberline {4}Linear Algebra}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Norms}{7}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Euclidean / Frobenius}{7}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Manhatten}{7}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Infinity}{7}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Nuclear}{7}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}Spectral}{7}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}Symmetric}{7}{subsubsection.4.1.6}
+\contentsline {subsubsection}{\numberline {4.1.7}Positive Definite}{7}{subsubsection.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.8}Positive Semi-Definite}{7}{subsubsection.4.1.8}
+\contentsline {subsubsection}{\numberline {4.1.9}Negative Definite}{7}{subsubsection.4.1.9}
+\contentsline {subsubsection}{\numberline {4.1.10}Negative Semi-Definite}{7}{subsubsection.4.1.10}
+\contentsline {subsection}{\numberline {4.2}Eigendecomposition}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Singular Value Decomposition (SVD)}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Principal Component Analysis (PCA)}{7}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Independent Component Analysis (ICA)}{7}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Canonical Component Analysis (CCA)}{7}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Factor Analysis}{7}{subsection.4.7}
+\contentsline {section}{\numberline {5}Statistics}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Probability Theory}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Distributions}{7}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Combinatorics}{7}{subsection.5.3}

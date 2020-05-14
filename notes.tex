@@ -1,14 +1,76 @@
 \documentclass[11pt]{article}
-\usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
 
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{10} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{10}  % for normal
+\DeclareFixedFont{\ttbcol}{T1}{txtt}{bx}{n}{8} % for bold
+\DeclareFixedFont{\ttmcol}{T1}{txtt}{m}{n}{8}  % for normal
+
+% Custom colors
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+    basicstyle=\ttm,
+    commentstyle=\color{gray!70},
+    emph={MyClass,__init__},          % Custom highlighting
+    emphstyle=\ttb\color{deepred},    % Custom highlighting style
+    keywordstyle=\ttb\color{deepblue},
+    %frame=tb,                         % Any extra options here
+    language=Python,
+    numbers=left,
+    numbersep=10pt,
+    otherkeywords={self},             % Add keywords here
+    showstringspaces=false            %
+    stringstyle=\color{deepgreen},
+    breaklines
+}}
+\newcommand\pythonstylecol{\lstset{
+    basicstyle=\ttmcol,
+    commentstyle=\color{gray!70},
+    emph={MyClass,__init__},          % Custom highlighting
+    emphstyle=\ttbcol\color{deepred},    % Custom highlighting style
+    keywordstyle=\ttbcol\color{deepblue},
+    %frame=tb,                         % Any extra options here
+    language=Python,
+    numbers=left,
+    numbersep=10pt,
+    otherkeywords={self},             % Add keywords here
+    showstringspaces=false            %
+    stringstyle=\color{deepgreen},
+    breaklines
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]{
+  \pythonstyle
+  \lstset{#1}
+}{}
+\lstnewenvironment{pythoncol}[1][]{
+  \pythonstylecol
+  \lstset{#1}
+}{}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+\usepackage{hyperref}
 
 \begin{document}
 \begin{center}
   \vspace*{10mm}
-  {\bf {\huge General Notes}}\\
+  {\bfseries {\huge General Notes}}\\
   \vspace*{5mm}
-  {\bf {CS, ML and Stats}
+  {\bfseries {CS, ML and Stats}
     \\ \vspace*{2mm} {\large Patrick Daly}
   }
 \end{center}
@@ -19,8 +81,87 @@
 \newpage
 
 \section{Computer Science}
+
 \subsection{Algorithms}
+
+\paragraph{DFS}  Time: O(n), Space: O(n)
+
+Solution exists far away.\\
+
+Recursive
+\begin{python}
+def dfs(node):
+  if node:
+    # do stuff if pre-order
+    if node.left:
+      dfs(node.left)
+    # do stuff if in-order
+    if node.right:
+      dfs(node.right)
+    # do stuff if post-order
+\end{python}
+
+Iterative
+\begin{python}
+def dfs(node): # if bst, may need to swap search left/right
+    visited = set()
+    stack = [node]
+    while stack:
+        current = stack.pop(-1)
+        print(current.val)
+        if current not in visited:
+            visited.add(current)
+        if current.left and current.left not in visited:
+            stack.append(current.left)
+        if current.right and current.right not in visited:
+            stack.append(current.right)
+    return visited
+\end{python}
+
+\paragraph{BFS} Time: O(n), Space(n)
+
+Iterative \\
+\begin{python}
+def bfs(node):
+    stack = [node]
+    while stack:
+        current = stack.pop(-1)
+        if current.left:
+            stack.append(current.left)
+        if current.right:
+            stack.append(current.right)
+\end{python}
+
+\paragraph{Mergesort} Time: O(nlogn), Space: O(n)
+
+\begin{python}
+def mergesort(array, start, end):
+    if start < end:
+        mid = (start+end) // 2
+        mergesort(array, start, mid)
+        mergesort(array, mid+1, end)
+        merge(array, start, mid, end)
+\end{python}
+
+\begin{python}
+def merge(array, start, mid, end):
+    left = array[start: mid+1]
+    right = array[mid+1: end+1]
+    i, j, k = 0, 0, start
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            array[k] = left[i]
+            i += 1
+        else:
+            array[k] = right[j]
+            j += 1
+        k += 1
+    if j == len(right):
+        array[k: end+1] = left[i:]
+\end{python}
+
 \subsection{Data Sctructures}
+
 \subsection{Linux}
 
 \section{Machine Learning}
@@ -37,6 +178,7 @@
 \subsubsection{Random Forest}
 \subsubsection{Gaussian Process}
 \subsubsection{Naive Bayes}
+\subsubsection{Kalman Filter? dunno where this should go yet... maybe estimation section?}
 \subsection{Unsupervised}
 \subsubsection{Gaussan Mixture Models}
 \subsubsection{K-Means}
