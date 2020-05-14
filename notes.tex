@@ -120,6 +120,8 @@ def dfs(node): # if bst, may need to swap search left/right
 
 \paragraph{BFS} Time: O(n), Space(n)
 
+Solution exists nearby.\\
+
 Iterative \\
 \begin{python}
 def bfs(node):
@@ -159,6 +161,77 @@ def merge(array, start, mid, end):
     if j == len(right):
         array[k: end+1] = left[i:]
 \end{python}
+
+\paragraph{Binary Search}
+
+\begin{python}
+def binarysearch(array, val, low, high):
+    if high < low:
+        # can also return high or low index
+        return 'Not found!'
+    mid = (low + high) // 2
+    if array[mid] > val:
+        return binarysearch(array, val, low, mid-1)
+    elif array[mid] < val:
+        return binarysearch(array, val, mid+1, high)
+    return mid
+\end{python}
+
+
+\paragraph{Greatest Common Divisor (GCD)} Time: ?, Space: ?
+
+Euclid: Time: O($ln^2$min(a, b)), Space: O(1)
+\begin{python}
+def gcd(a, b):
+    return gcd(b, a % b) if b else a
+\end{python}
+
+Stein: Time: 60\% faster than Euclid in theory, similar in practice Space: O(1)
+\begin{python}
+def stein(a, b):
+    # binary gcd
+    if a == b: return a
+    if a == 0: return v
+    if b == 0: return a
+    if ~a & 1: # a is even
+        if b & 1: # b is odd
+            return stein(a >> 1, v)
+        else: # b is even
+            return stein(a >> 1, b >> 1) << 1
+    else:
+        if ~b & 1: # b is even
+            return stein(a, b >> 1)
+        else: # b is odd
+            if a > b:
+                return stein((a-b) >> 1, b)
+            else:
+                return stein(u, (b-a) >> 1)
+\end{python}
+
+
+\paragraph{Fibonacci} Time: O(n), Space: O(1)
+
+Iterative
+\begin{python}
+def fib_iterative(n):
+    if n == 0: return 0
+    if n == 1: return 1
+    first, seecond, fibn = 0, 1, 0
+    for i in range(2, n+1):
+      fib_n = fib_n2 + fib_n1
+      fib_n = fib_n2
+      fib_n2 = fib_n
+    return fibn
+\end{python}
+
+Recursive
+\begin{python}
+def fib_recursive(n, dp={0: 0, 1: 1}):
+    if n in dp:
+        return dp[n]
+    return fib_recursive(n-2, dp) + fib_recursive(n-1, dp)
+\end{python}
+
 
 \subsection{Data Sctructures}
 
