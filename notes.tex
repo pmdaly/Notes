@@ -233,9 +233,49 @@ def fib_recursive(n, dp={0: 0, 1: 1}):
 \end{python}
 
 
+\paragraph{Longest Increasing Subsequence} Time: O(nlogn), Space: O(n)
+
+\begin{python}
+def lis(nums):
+    tails = [0]*len(nums)
+    maxlen = 0
+    for num in nums:
+        start, end = 0, maxlen
+        while start != end:
+            mid = (start+end)//2
+            if tails[mid] < num:
+                start = mid + 1
+            else:
+                end = mid
+        tails[start] = num
+        maxlen = max(maxlen, start+1)
+    return maxlen
+\end{python}
+
+
 \subsection{Data Sctructures}
 
 \subsection{Linux}
+
+\paragraph{Common Commands}
+\begin{enumerate}
+  \item grep
+  \item awk
+  \item xargs
+  \item find
+  \item cut
+\end{enumerate}
+
+\paragraph{Software \& Packages}
+\begin{enumerate}
+  \item Vim
+  \item Tmux
+  \item Ranger
+  \item Autojump
+  \item Tldr
+  \item Jq
+  \item Ccat
+\end{enumerate}
 
 \section{Machine Learning}
 \subsection{Supervised}
