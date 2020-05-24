@@ -253,6 +253,30 @@ def lis(nums):
 \end{python}
 
 
+\paragraph{Topological Sort} Time: (V + E), Space: O(V)
+
+  Identifying a linear ordering of vertices such that if the graph G contains
+  an edge (u, v), then u appears before v in the ordering.  Often used in
+  identifying depency graphs or sources in a event chain.  Multiple solutions
+  may exist.
+
+\begin{python}
+def topo_sort(G):
+    def dfs(u):
+        visited.add(u)
+        for v in G[u]:
+            if v not in visited:
+              dfs(v)
+        order.insert(u)
+    order = list()
+    visited = set()
+    for u in G:
+        if u not in visited:
+          dfs(u)
+    return order
+\end{python}
+
+
 \subsection{Data Sctructures}
 
 \subsection{Linux}
