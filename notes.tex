@@ -267,7 +267,7 @@ def topo_sort(G):
         for v in G[u]:
             if v not in visited:
               dfs(v)
-        order.insert(u)
+        order.insert(0, u)
     order = list()
     visited = set()
     for u in G:
@@ -275,6 +275,48 @@ def topo_sort(G):
           dfs(u)
     return order
 \end{python}
+
+
+\paragraph{Strongly Connected Components} Time: O(V + E), Space: O(V + E)
+
+Return all subgraphs for which each node is reachable from all other nodes in
+the subgraph. Tarjan and Pearce algorithms reduce the space requirement by 1-2x
+but they're more complicated to remember. Kosaraju is straightforward - DFS on
+G with stack, DFS on G.t.
+
+\begin{python}
+def transpose(G):
+    Gt = defaultdict(set)
+    for u in G:
+        for v in G[u]:
+
+def scc_kosaraju(G):
+    def visit(u, add_to_stack):
+        visited[u] = True
+        if not add_to_stack:
+            sccs[-1].append(u)
+        for v in G[u]:
+            if not visited[v]:
+                visit(v, add_to_stack)
+        if add_to_stack:
+            stack.append(v)
+    sccs = [[]]
+    visited = dict.fromkeys(G.keys(), False)
+    stack = list()
+    for u in G:
+        if not visited[u]:
+            visit(u, add_to_stack=True)
+    G = transpose(G)
+    visited = dict.fromkeys(G.keys(), False)
+    while stack:
+        u = stack.pop()
+        if not visited[u]:
+            visit(u, add_to_stack=False)
+            if stack:
+                sccs.append([])
+    return sccs
+
+\end{python} 
 
 
 \subsection{Data Sctructures}
